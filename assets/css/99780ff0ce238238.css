@@ -1,0 +1,2 @@
+@layer components{.marquee{animation:animateMarquee 60s linear infinite}@keyframes animateMarquee{0%{transform:translateX(0)}to{transform:translateX(calc(-50% - 18px))}}}
+/*# sourceMappingURL=99780ff0ce238238.css.map*/
