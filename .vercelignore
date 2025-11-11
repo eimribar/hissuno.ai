@@ -1,0 +1,7 @@
+server.py
+start-server.sh
+push-to-github.sh
+*.md
+*.log
+*.bak
+.DS_Store
