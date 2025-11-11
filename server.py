@@ -28,10 +28,7 @@ class RewriteHandler(SimpleHTTPRequestHandler):
         elif path.startswith('/_next/image'):
             # Next.js Image API - return 404, we can't replicate this
             return None
-        elif path.startswith('/img/home/'):
-            # Images: /img/home/file.webp -> ./images/file.webp
-            filename = path.replace('/img/home/', '')
-            path = f'/images/{filename}'
+        # Removed /img/home/ rewrite - files now exist in actual /img/home/ directory
 
         # Call parent's translate_path with the rewritten path
         return super().translate_path(path)
